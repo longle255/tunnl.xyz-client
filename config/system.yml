@@ -1,0 +1,6 @@
+server:
+  address: "localhost"
+  subdomain: ""
+  port: 8080
+  webPort: 8081
+  maxTcpSockets: 20
