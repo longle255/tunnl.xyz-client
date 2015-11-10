@@ -55,7 +55,9 @@ TunnlClient(opt.port, opt, function(err, tunnel) {
     openUrl.open(tunnel.url);
   }
 
-  tunnel.on('error', err => console.log(err));
+  tunnel.on('error', function(err) {
+    console.log(err);
+  });
 });
 
 // vim: ft=javascript
